@@ -19,4 +19,4 @@ const allValues =  {
 
 const {name, age, nationality, profession, squad, squadInitials} = allValues
 
-console.log(`Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squad} - ${squadInitials}.`)
+console.log(`Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squad} - ${squadInitials}.`);
