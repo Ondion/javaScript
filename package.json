@@ -1,0 +1,20 @@
+{
+  "name": "javaScript",
+  "version": "1.0.0",
+  "description": "**Repositório para registro e estudos referente a linguagem JavaScript**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ondion/javaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ondion/javaScript/issues"
+  },
+  "homepage": "https://github.com/Ondion/javaScript#readme"
+}
