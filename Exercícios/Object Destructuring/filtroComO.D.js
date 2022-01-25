@@ -122,8 +122,3 @@ const adultos = [
 // console.log(secondArray)
 
           
-
-          
-const newBook = (title, author, price, discount) => (EXPRESSÃO);
-
-        
