@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ondion/javaScript/issues"
   },
-  "homepage": "https://github.com/Ondion/javaScript#readme"
+  "homepage": "https://github.com/Ondion/javaScript#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0"
+  }
 }
