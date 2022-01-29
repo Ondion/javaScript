@@ -1,8 +1,0 @@
-.gitignore
-Teórico/.ipynb_checkpoints
-Teórico/AJAX/.ipynb_checkpoints
-Teórico/Frameworks/.ipynb_checkpoints
-Teórico/Módulos/.ipynb_checkpoints
-package.json
-node_modules
-.eslintrc.json
