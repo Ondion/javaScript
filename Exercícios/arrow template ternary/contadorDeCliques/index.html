@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button>Botão Contador</button>
+  <span>Você clicou 1 vez!</span>
+
+<script>
+  let clickCount = 1;
+  const botao = document.getElementsByTagName('button');
+
+  botao[0].addEventListener('click',(e) => {
+    document.getElementsByTagName('span')[0].innerText = `Você clicou ${clickCount += 1} vezes!`
+  });
+  
+</script>
+
+</body>
+</html>
