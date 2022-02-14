@@ -1,7 +1,11 @@
-function App(valor) {
+import ExeMenu from "./ExeMenu";
+import Greeting from "./Greeting";
+
+function App() {
   return (
-    <li>{valor}</li>
-  );
+    <Greeting tester = 'Passagem de parâmetros dentro da função!'/>
+     );
+     
 }
 
 export default App;
