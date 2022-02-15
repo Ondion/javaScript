@@ -1,0 +1,19 @@
+#root {
+  display: flex;
+  border: solid red 3px;
+}
+
+.ladoA {
+  border: solid red 3px;
+  width: 20%;
+}
+
+.main {
+  border: solid red 3px;
+  width: 60%;
+}
+
+.ladoB {
+  border: solid red 3px;
+  width: 20%;
+}
