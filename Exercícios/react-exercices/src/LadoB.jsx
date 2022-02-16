@@ -1,9 +1,12 @@
 import React from "react";
-import ReactDOM from "react";
 
 function LadoB() {
   return(
-    <p>oi</p>
+    <>
+     <section className="ladoB">
+      
+      </section>
+    </>
   )
 }
 

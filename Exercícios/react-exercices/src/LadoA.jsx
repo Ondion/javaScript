@@ -1,9 +1,12 @@
 import React from "react";
-import ReactDOM from "react";
 
 function LadoA() {
   return(
-    <p>oi</p>
+    <>
+     <section className="ladoA" style={{backgroundColor: "#e8e9ed"}}>
+      
+      </section>
+    </>
   )
 }
 

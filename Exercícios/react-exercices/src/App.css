@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: aliceblue;
+}
+
 #root {
   display: flex;
   border: solid red 3px;

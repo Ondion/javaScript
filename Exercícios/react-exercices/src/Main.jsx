@@ -1,15 +1,19 @@
 import React from "react";
-import ReactDOM from "react";
 
-function Main() {
+const Main = () => {
   return(
-    <>
-    <p>oi</p>
-    <p>tudo bem?</p>
-    <p>testando o carregamento de novas páginas</p>
-    </>
-  )
+    <div className="main">
+      <Arrow/>
+      <Arrow/>
+      <Arrow/>
+      <Arrow/>
+      <Arrow/>
+      <Arrow/>
+      <Arrow/>
+    </div>
+  );
 }
 
+const Arrow = () => <article>AllTheInstances</article>
 
 export default Main;
