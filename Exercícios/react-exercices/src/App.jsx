@@ -5,16 +5,17 @@ import Main from "./Main";
 import LadoA from "./LadoA"
 import LadoB from "./LadoB"
 
-
 function App() {
   return (
     <>
     <LadoA/>
-    <Main/>
+    <Main name="teste" lastName = "teste"/>
     <LadoB/>
     </>
      );
 }
+
+
 
 
 export default App;

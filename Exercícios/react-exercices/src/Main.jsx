@@ -1,19 +1,18 @@
 import React from "react";
 
-const Main = () => {
+// class Main extends React.Component {
+//   render(props) {
+//     return <h1>Hello, {props.name} {props.lastName}</h1>;
+//   }
+// }
+
+const Main = (props) => {
+  const { name, lastName } = props;
   return(
-    <div className="main">
-      <Arrow/>
-      <Arrow/>
-      <Arrow/>
-      <Arrow/>
-      <Arrow/>
-      <Arrow/>
-      <Arrow/>
-    </div>
-  );
+    <p>valor1: {name} e o valor2: {lastName}</p>
+  )
 }
 
-const Arrow = () => <article>AllTheInstances</article>
+
 
 export default Main;
