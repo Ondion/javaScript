@@ -1,0 +1,11 @@
+
+Teórico/.ipynb_checkpoints
+Teórico/AJAX/.ipynb_checkpoints
+Teórico/Frameworks/.ipynb_checkpoints
+Teórico/Módulos/.ipynb_checkpoints
+node_modules
+.eslintrc.json
+*.ipynb_checkpoints
+package-lock.json
+tester.js
+.tester
