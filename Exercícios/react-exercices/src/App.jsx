@@ -5,11 +5,18 @@ import Main from "./Main";
 import LadoA from "./LadoA"
 import LadoB from "./LadoB"
 
+
+const obj = {
+  name: "nome passado",
+  lastName: "lastName passado",
+};
+
 function App() {
   return (
     <>
     <LadoA/>
-    <Main name="teste" lastName = "teste"/>
+    <Main name = {obj.name} lastName = {obj.lastName}>
+    </Main>
     <LadoB/>
     </>
      );

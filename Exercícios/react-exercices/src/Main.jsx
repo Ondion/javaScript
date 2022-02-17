@@ -6,8 +6,8 @@ import React from "react";
 //   }
 // }
 
-const Main = (props) => {
-  const { name, lastName } = props;
+const Main = ({ name, lastName }) => {
+
   return(
     <p>valor1: {name} e o valor2: {lastName}</p>
   )
