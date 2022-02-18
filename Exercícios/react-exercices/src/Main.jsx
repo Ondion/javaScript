@@ -6,10 +6,13 @@ import React from "react";
 //   }
 // }
 
-const Main = ({ name, lastName }) => {
+const Main = ({ name, lastName, children}) => {
 
   return(
+    <>
     <p>valor1: {name} e o valor2: {lastName}</p>
+    {children}
+    </>
   )
 }
 
