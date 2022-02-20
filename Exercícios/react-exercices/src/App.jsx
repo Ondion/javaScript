@@ -1,13 +1,14 @@
 import React from "react";
 import "../src/App.css"
+import UseStateExe from "./components/UseStateExe";
 
 
-const aqui = (x) => console.log(x);
 
-const fabio = "fabio"
 function App() {
   return (
-   <button onClick={() => aqui(fabio)}>React!</button>
+    <div className="container">
+      <UseStateExe />
+    </div>
   )
 }
 
