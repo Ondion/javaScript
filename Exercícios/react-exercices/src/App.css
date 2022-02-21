@@ -2,7 +2,6 @@
   margin: 1%;
   padding: 1%;
   border: 1%;
-  background-color: grey;
 }
 
 h2 {
@@ -10,3 +9,11 @@ h2 {
   text-align: center;
 }
 
+.card {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+button {
+  margin: 6px;
+}
