@@ -1,0 +1,25 @@
+:root {
+  --green-trybe: #45b382;
+}
+
+body {
+  margin: 0;
+  background-color: #ededed;
+  color: #333;
+}
+
+html,
+body,
+.root,
+.App {
+  height: 90%;
+}
+
+.topic-list {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 44px;
+}

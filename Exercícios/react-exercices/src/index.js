@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+
+// import AppFreeCodeCamp from './components/freeCodeCamp/AppFreeCodeCamp.jsx'
+// ReactDOM.render(<AppFreeCodeCamp />, document.getElementById('root'));
+ 
+import AppFormularios from './components/formulários/appFormularios';
+ReactDOM.render(<AppFormularios />, document.getElementById('root'))
