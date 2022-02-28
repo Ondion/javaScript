@@ -12,7 +12,6 @@ class Lifecycle extends React.Component {
 
   componentDidMount() {
     console.log('componentDidMount');
-    alert('oi')
     this.setState({
       piada: 'mudou!'
     })
@@ -20,7 +19,10 @@ class Lifecycle extends React.Component {
 
   componentDidUpdate() {
     console.log('componentDidUpdate');
+    
   }
+
+  
 
   render() {
     console.log('render');
