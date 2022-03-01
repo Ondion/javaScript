@@ -22,14 +22,15 @@ class Lifecycle extends React.Component {
     
   }
 
-  
+  shouldComponentUpdate() {
+    return true
+  }
 
   render() {
     console.log('render');
     return(
       <>
-      <p>{this.state.piada}</p>
-      <button onClick={this.componentDidUpdate}>Aqui</button>
+        <button>Aqui</button>
       </>
     )
   }
