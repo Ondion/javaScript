@@ -49,7 +49,6 @@ class FetchJoke extends React.Component { // Componente que faz requisição de 
 
   render() {
     const { storedJokes } = this.state;
-    const loadingElement = <span>Loading...</span>; 
 
     return(
       <>
