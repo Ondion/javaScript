@@ -17,5 +17,8 @@ import ReactDOM from 'react-dom';
 // import FetchRickAndMorty from './components/lifecycle/FetchRickAndMorty';
 // ReactDOM.render(<FetchRickAndMorty  />, document.getElementById('root'));
 
-import DadJoke from './components/lifecycle/DadJoke';
-ReactDOM.render(<DadJoke />, document.getElementById('root'));
+// import DadJoke from './components/lifecycle/DadJoke';
+// ReactDOM.render(<DadJoke />, document.getElementById('root'));
+
+import LigaDesliga from './components/lifecycle/LigaDesliga';
+ReactDOM.render(<LigaDesliga />, document.getElementById('root'));
