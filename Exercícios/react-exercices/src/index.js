@@ -20,5 +20,5 @@ import ReactDOM from 'react-dom';
 // import DadJoke from './components/lifecycle/DadJoke';
 // ReactDOM.render(<DadJoke />, document.getElementById('root'));
 
-import LigaDesliga from './components/lifecycle/LigaDesliga';
-ReactDOM.render(<LigaDesliga />, document.getElementById('root'));
+// import LigaDesliga from './components/lifecycle/LigaDesliga';
+// ReactDOM.render(<LigaDesliga />, document.getElementById('root'));

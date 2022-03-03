@@ -24,7 +24,7 @@ class LigaDesliga extends Component {
   }
 
   componentWillUnmount() {
-  
+  // ainda sem uso
   }
 
   
