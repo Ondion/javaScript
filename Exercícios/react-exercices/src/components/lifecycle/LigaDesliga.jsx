@@ -8,15 +8,22 @@ class LigaDesliga extends Component {
       seconds: 0,
       isVisible: true,
     }
+
+  }
+
+  componentDidMount() {
     setInterval(() => {
       this.setState(({ seconds }) => ({seconds: seconds + 1}))
-    }, 1000)
+    }, 1000);
   }
 
 
   
   render() {
     const { seconds,  isVisible } = this.state;
+
+ 
+
     return (
       <>
 
