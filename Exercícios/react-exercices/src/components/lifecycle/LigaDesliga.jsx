@@ -17,6 +17,12 @@ class LigaDesliga extends Component {
     }, 1000);
   }
 
+  componentDidUpdate() {
+    this.state.seconds === 6 && this.setState({
+      seconds: 0,
+    })
+  }
+
 
   
   render() {
