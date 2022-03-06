@@ -4,17 +4,13 @@ import { Link } from 'react-router-dom';
 class Sidebar extends Component {
   render() {
     return (
-     <aside className='SidebarClass'>
-       <Link to='teste' >Teste</Link>
-       <Link to='' >Teste</Link>
-       <Link to='' >Teste</Link>
-       <Link to='' >Teste</Link>
-       <Link to='' >Teste</Link>
-       <Link to='' >Teste</Link>
-       <Link to='' >Teste</Link>
-       <Link to='' >Teste</Link>
-       <Link to='' >Teste</Link>
-       <Link to='' >Teste</Link>
+     <aside className='sidebarClass'>
+       <Link to='./' >Home</Link>
+       <Link to='DadJoke' >DadJoke</Link>
+       <Link to='FetchJoke' >FetchJoke</Link>
+       <Link to='FetchRickAndMorty' >FetchRickAndMorty</Link>
+       <Link to='Lifecycle' >Lifecycle</Link>
+       <Link to='LigaDesliga' >LigaDesliga</Link>
      </aside>
     );
   }
