@@ -7,4 +7,7 @@
 const custoProduto = 150;
 const valorVenda = 200;
 
-console.log("Lucro para mil produtos, R$:" + (valorVenda - (custoProduto + custoProduto * 0.2))*1000);
+console.log(
+  "Lucro para mil produtos, R$:" +
+    (valorVenda - (custoProduto + custoProduto * 0.2)) * 1000
+);

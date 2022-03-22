@@ -16,29 +16,29 @@ let menorValor = 100;
 console.log(numbers);
 
 for (let index = 0; index < numbers.length; index += 1) {
-    soma = soma + numbers[index];
-    console.log("soma até o momento:", soma);
+  soma = soma + numbers[index];
+  console.log("soma até o momento:", soma);
 }
 
-console.log("média de valores:", (soma / numbers.length));
+console.log("média de valores:", soma / numbers.length);
 
 if (soma / numbers.length > 20) {
-    console.log("valor maior que 20");
+  console.log("valor maior que 20");
 } else {
-    console.log("valor menor ou igual a 20")
+  console.log("valor menor ou igual a 20");
 }
 
 for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] >= maiorValor) {
-        maiorValor = numbers[index];
-    }
-    if (numbers[index] % 2 === 1) {
-        impares += 1;
-    }
-    if (numbers[index] < menorValor) {
-        menorValor = numbers[index];
-    }
-    console.log(numbers[index]/2);
+  if (numbers[index] >= maiorValor) {
+    maiorValor = numbers[index];
+  }
+  if (numbers[index] % 2 === 1) {
+    impares += 1;
+  }
+  if (numbers[index] < menorValor) {
+    menorValor = numbers[index];
+  }
+  console.log(numbers[index] / 2);
 }
 console.log("Maior valor:", maiorValor);
 console.log("Quantidade valores impares:", impares);

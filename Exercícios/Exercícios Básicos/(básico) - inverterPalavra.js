@@ -4,6 +4,6 @@ let palavra = "natan";
 let inverte = [];
 
 for (let index = 0; index < palavra.length; index += 1) {
-    inverte.push(palavra[(palavra.length -1) - index])
+  inverte.push(palavra[palavra.length - 1 - index]);
 }
-console.log(inverte.join(""))
+console.log(inverte.join(""));
