@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 class SideMenu extends Component {
   render() {
     return (
-      <div className="sideClass">
-        <Link to='/'> Main </Link>
-        <Link to='/B15d01'> B15d01 </Link>
-      </div>
+      <aside className="sideClass">
+        <Link className="linkClass" to="/">Main</Link>
+        <Link className="linkClass" to="/B15d01">B15d01</Link>
+      </aside>
     );
   }
 }

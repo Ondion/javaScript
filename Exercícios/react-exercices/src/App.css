@@ -6,11 +6,16 @@
 
 #root {
   display: flex;
-  flex-direction: row;
 }
 
 .sideClass {
-  width: 10%;
-  border: solid red 2px;
   text-align: center;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+
+.linkClass {
+  text-decoration: none;
 }

@@ -4,10 +4,9 @@ import SideMenu from './SideMenu';
 class MainPage extends Component {
   render() {
     return (
-      <div>
+      <>
         <SideMenu />
-        <p>ts</p>
-      </div>
+      </>
     );
   }
 }

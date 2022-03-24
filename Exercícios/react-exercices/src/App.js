@@ -8,13 +8,12 @@ class App extends Component {
   constructor() {
     super();
     this.notfound = this.notfound.bind(this);
-
   }
 
   notfound() {
     return(
       <>
-        <Link to='/'><h2>ERRO 404 </h2></Link>
+        <Link to='/'><h2>ERRO 404</h2></Link>
       </>
     )
   }
@@ -25,7 +24,6 @@ class App extends Component {
         <Switch>
           <Route exact path="/" render={(r) => <MainPage { ...r }/> } />
           <Route exact path="/B15d01" render={(r) => <B15d01 { ...r }/> } />
-
           <Route path="*" component={ this.notfound } />
         </Switch>
       </BrowserRouter>
