@@ -1,46 +1,36 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import './App.css';
+import MainPage from './pages/MainPage';
+import B15d01 from './pages/B15d01';
 
 class App extends Component {
   constructor() {
     super();
+    this.notfound = this.notfound.bind(this);
 
-    this.state = {
-      valor: '',
-      valor2: '',
-    }
   }
 
-  mudar = ({target: { value }}) => {
-    this.setState({valor: value})
-  }
-
-  enviar = () => {
-    const { valor } = this.state;
-    this.setState({
-      valor: '',
-      valor2: valor
-    })
+  notfound() {
+    return(
+      <>
+        <Link to='/'><h2>ERRO 404 </h2></Link>
+      </>
+    )
   }
 
   render() {
-    const { valor, valor2 } = this.state;
     return (
-      <div>
-        <label htmlFor='idInput'>
-           Editar!!!
-         <input id='idInput' type="email" />
-        </label>
-        <div>
-          <p>Editar!</p>
-        </div>
-        <input data-testid="input-test" size="100" value={ valor } type='text' onChange={(e) => this.mudar(e)}/>
-        <button  value="Enviar" data-testid="button-test" type='button' onClick={() => this.enviar()}>Enviar</button>
-        <button type='button'> Apagar </button>
-        <h2 data-testid="value-test">{ valor2 }</h2>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" render={(r) => <MainPage { ...r }/> } />
+          <Route exact path="/B15d01" render={(r) => <B15d01 { ...r }/> } />
+
+          <Route path="*" component={ this.notfound } />
+        </Switch>
+      </BrowserRouter>
     );
   }
 }
 
 export default App;
-
