@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from './redux';
+import store from './redux/store';
 import './App.css';
 import MainPage from './pages/MainPage';
 import B15d01 from './pages/B15d01';
+import B15d02 from './pages/B15d02';
+import B15d03 from './pages/B15d03';
 
 class App extends Component {
   constructor() {
@@ -27,6 +29,8 @@ class App extends Component {
           <Switch>
             <Route exact path="/" render={(r) => <MainPage { ...r }/> } />
             <Route exact path="/B15d01" render={(r) => <B15d01 { ...r }/> } />
+            <Route exact path="/B15d02" render={(r) => <B15d02 { ...r }/> } />
+            <Route exact path="/B15d03" render={(r) => <B15d03 { ...r }/> } />
             <Route path="*" component={ this.notfound } />
           </Switch>
         </BrowserRouter>

@@ -1,11 +1,11 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers } from "redux";
 import { composeWithDevTools } from 'redux-devtools-extension';
-import appReducer from './reducers/appReducer';
+import { B15d02Reducer } from "../reducers/B15d02Reducer";
+
 
 const reducers = combineReducers({
-  appReducer,
-  arrowReducer: (state = {test2: true}) => state, 
-});
+  B15d02: B15d02Reducer,
+})
 
 const store = createStore(reducers, composeWithDevTools());
 

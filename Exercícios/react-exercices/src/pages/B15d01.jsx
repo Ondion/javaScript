@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 
 class B15d01 extends Component {
   render() {
-    console.log(this.props);
     return (
       <>
         <SideMenu />
