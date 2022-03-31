@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SideMenu from './SideMenu';
-import change from '../redux/actions';
+import { change } from '../redux/actions';
 
 class B15d02 extends Component {
   render() {

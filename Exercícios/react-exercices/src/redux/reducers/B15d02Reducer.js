@@ -1,7 +1,4 @@
-const INITIAL_STATE = {
-  test: true,
-  value: 'string test!'
-}
+const INITIAL_STATE = {};
 
 const B15d02Reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
@@ -16,4 +13,17 @@ const B15d02Reducer = (state = INITIAL_STATE, action) => {
   }
 };
 
-export { B15d02Reducer }
+const B15d03Reducer = (state = INITIAL_STATE, action) => {
+  switch (action.type) {
+    case "SET_FORM":
+      return {
+        ...state,
+        ...action.payload,
+      }
+      
+    default:
+      return state;
+  }
+};
+
+export { B15d02Reducer, B15d03Reducer }

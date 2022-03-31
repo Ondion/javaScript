@@ -8,4 +8,11 @@ const change = (send1, send2) => ({
   }
 });
 
-export default change;
+const sendForm = (state) => ({
+  type: 'SET_FORM',
+  payload: {
+    ...state,
+  }
+}) 
+
+export { change, sendForm };
