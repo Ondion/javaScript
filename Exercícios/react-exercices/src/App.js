@@ -8,6 +8,7 @@ import B15d01 from './pages/B15d01';
 import B15d02 from './pages/B15d02';
 import B15d03 from './pages/B15d03';
 import B15d03b from './pages/B15d03b';
+import B15d04 from './pages/B15d04';
 
 class App extends Component {
   constructor() {
@@ -33,6 +34,7 @@ class App extends Component {
             <Route exact path="/B15d02" render={(r) => <B15d02 { ...r }/> } />
             <Route exact path="/B15d03" render={(r) => <B15d03 { ...r }/> } />
             <Route exact path="/B15d03b" render={(r) => <B15d03b { ...r }/> } />
+            <Route exact path="/B15d04" render={(r) => <B15d04 { ...r }/> } />
             <Route path="*" component={ this.notfound } />
           </Switch>
         </BrowserRouter>

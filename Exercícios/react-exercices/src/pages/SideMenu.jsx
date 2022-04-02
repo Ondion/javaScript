@@ -10,6 +10,7 @@ class SideMenu extends Component {
         <Link className="linkClass" to="/B15d01">B15d01</Link>
         <Link className="linkClass" to="/B15d02">B15d02</Link>
         <Link className="linkClass" to="/B15d03">B15d03</Link>
+        <Link className="linkClass" to="/B15d04">B15d04</Link>
       </aside>
     );
   }

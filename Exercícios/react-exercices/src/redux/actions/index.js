@@ -15,4 +15,9 @@ const sendForm = (state) => ({
   }
 }) 
 
-export { change, sendForm };
+const sendGPS = (state) => ({
+  type: "GPS_TEST",
+  payload: state,
+})
+
+export { change, sendForm, sendGPS };
