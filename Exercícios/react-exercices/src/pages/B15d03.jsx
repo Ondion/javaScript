@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import SideMenu from './SideMenu';
 import { sendForm } from '../redux/actions';
 
 class B15d03 extends Component {
@@ -49,7 +48,6 @@ class B15d03 extends Component {
 
     return (
       <>
-        <SideMenu />
         <div>
           <form>
             <label

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import SideMenu from './SideMenu';
 import { change } from '../redux/actions';
 
 class B15d02 extends Component {
@@ -8,7 +7,6 @@ class B15d02 extends Component {
     const {B15d02: { test }, callDispatch } = this.props;
     return (
       <>
-        <SideMenu />
         <div>
           <p>
             Esse Boolean veio via Redux e Props:

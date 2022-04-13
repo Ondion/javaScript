@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import SideMenu from './SideMenu';
 import { connect } from 'react-redux';
 
 class B15d01 extends Component {
   render() {
     return (
       <>
-        <SideMenu />
       </>
     );
   }

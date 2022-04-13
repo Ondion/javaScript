@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Map, Marker } from "pigeon-maps"
-import SideMenu from './SideMenu';
 import { connect } from 'react-redux';
 import { sendGPS } from '../redux/actions';
 
@@ -27,7 +26,6 @@ class B15d04 extends Component {
     const { iss_position: { longitude, latitude } } = this.props;
     return (
       <>
-        <SideMenu />
         <div className='mapClass'>
           <h1>{ `ISS Location: latitude: ${ latitude }, longitude: ${ longitude }` }</h1>
         <Map height={800} width={ 800 } defaultCenter={[latitude, longitude]} defaultZoom={5}>
