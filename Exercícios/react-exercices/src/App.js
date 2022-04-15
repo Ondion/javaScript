@@ -5,7 +5,6 @@ import store from './redux/store';
 import './App.css';
 import MainPage from './pages/MainPage';
 import SideMenu from './components/SideMenu';
-import pages from './data/pages';
 import B15d01 from './pages/B15d01';
 import B15d02 from './pages/B15d02';
 import B15d03 from './pages/B15d03';
@@ -35,14 +34,11 @@ class App extends Component {
             <Switch>
               <Route exact path="/" render={(r) => <MainPage { ...r }/> } />
               <Route exact path="/B15d01" render={(r) => <B15d01 { ...r }/> } />
-              {pages.map((e) =>(
-                <Route exact path={`/${e}`} render={(r) => <`${ e }` { ...r }/> } />
-              ))}
-              {/* <Route exact path="/B15d02" render={(r) => <B15d02 { ...r }/> } />
+              <Route exact path="/B15d02" render={(r) => <B15d02 { ...r }/> } />
               <Route exact path="/B15d03" render={(r) => <B15d03 { ...r }/> } />
               <Route exact path="/B15d03b" render={(r) => <B15d03b { ...r }/> } />
               <Route exact path="/B15d04" render={(r) => <B15d04 { ...r }/> } />
-              <Route exact path="/B17d01" render={(r) => <B17d01 { ...r }/> } /> */}
+              <Route exact path="/B17d01" render={(r) => <B17d01 { ...r }/> } />
               <Route path="*" component={ this.notfound } />
             </Switch>
         </BrowserRouter>
