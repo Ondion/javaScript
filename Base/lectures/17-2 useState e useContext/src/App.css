@@ -1,0 +1,174 @@
+body {
+  background: #303030;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.App {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.new-question {
+  display: flex;
+  justify-content: center;
+}
+
+.new-question form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.new-question form label {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.question-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-section label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  background: #17872a;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.main-header-title {
+  max-width: 60vw;
+  display: flex;
+  justify-content: center;
+}
+
+.main-section {
+  margin-top: 100px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.question-card {
+  padding: 20px;
+  border-radius: 2%;
+  background: #3a3a3a;
+  margin-bottom: 10px;
+}
+
+.question-card-header {
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+}
+
+.question-card-image {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.question-card p {
+  margin-bottom: 0;
+}
+
+button {
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 900;
+  background: #17872a;
+  border: none;
+  border-radius: 2%;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+button:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+input,
+textarea {
+  border: none;
+  background: #252525;
+  color: #fff;
+  padding: 5px;
+  border-radius: 2%;
+  margin-top: 5px;
+}
+
+.question-card-claps {
+  font-size: smaller;
+  border-top: 1px solid white;
+  margin-top: 20px;
+  color: lightgreen;
+}
+
+.question-card-claps {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.trash {
+  margin-top: 5px;
+  margin-left: -2px;
+  cursor: pointer;
+  color: lightgreen;
+}
+
+.claps {
+  margin-top: 8px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Easter EGG! */
+#xablau {
+  animation-duration: 1200ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation: blink 1200ms infinite !important; /* Safari and Chrome */
+}
+@keyframes blink {
+  from {
+    background-color: rgb(214, 7, 255);
+    color: yellow;
+  }
+  to {
+    color: rgb(214, 7, 255);
+    background-color: yellow;
+  }
+}
+@-webkit-keyframes blink {
+  from {
+    color: yellow;
+    background-color: rgb(214, 7, 255);
+  }
+  to {
+    color: rgb(214, 7, 255);
+    background-color: yellow;
+  }
+}
+
+div.question-card-claps {
+  user-select: none; /* standard syntax */
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+}
