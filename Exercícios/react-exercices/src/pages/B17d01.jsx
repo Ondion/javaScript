@@ -3,7 +3,7 @@ import courseContext from '../context/courseContext';
 
 class B17d01 extends Component {
   render() {
-    console.log(this.context);
+    const { services: { handleCount } } = this.context;
     return (
       <courseContext.Consumer>
         {(value) => (
@@ -11,6 +11,8 @@ class B17d01 extends Component {
             <p>{ value.chave }</p>
             <p>{ value.outraChave }</p>
             { value.array.map((e) => <p>{ e }</p>) }
+            <p>{ value.count }</p>
+            <button onClick={ handleCount }>Aqui</button>
           </div>
         )}
       </courseContext.Consumer>

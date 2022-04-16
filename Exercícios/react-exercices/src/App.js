@@ -11,6 +11,7 @@ import B15d03 from './pages/B15d03';
 import B15d03b from './pages/B15d03b';
 import B15d04 from './pages/B15d04';
 import B17d01 from './pages/B17d01';
+import ComponentProvider from './context/componentProvider';
 
 class App extends Component {
   constructor() {
@@ -38,7 +39,9 @@ class App extends Component {
               <Route exact path="/B15d03" render={(r) => <B15d03 { ...r }/> } />
               <Route exact path="/B15d03b" render={(r) => <B15d03b { ...r }/> } />
               <Route exact path="/B15d04" render={(r) => <B15d04 { ...r }/> } />
-              <Route exact path="/B17d01" render={(r) => <B17d01 { ...r }/> } />
+              <ComponentProvider>
+                <Route exact path="/B17d01" render={(r) => <B17d01 { ...r }/> } />
+              </ComponentProvider>
               <Route path="*" component={ this.notfound } />
             </Switch>
         </BrowserRouter>
